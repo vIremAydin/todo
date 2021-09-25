@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import {useState} from "react";
 import {makeStyles} from "@material-ui/core/styles";
-import {Button, TextField} from "@material-ui/core";
+//import {Button, TextField} from "@material-ui/core";
 import Item from "./Item";
 
 
@@ -81,17 +81,17 @@ export const List = () => {
                 }
             </div>
             <div className={classes.innerBox}>
-                <Button className={classes.clearButton} onClick={clearCompleted}>Clear Completed</Button>
+                <button className={classes.clearButton} onClick={clearCompleted}>Clear Completed</button>
             </div>
             <div className={classes.innerBox}>
 
-                <TextField
+                <textField
                     id="name-input"
                     label="Task"
                     variant="outlined"
                     onChange={(e) => itemHandler(e.target.value)}
                 />
-                <Button className={classes.submitButton} onClick={submitHandler}>Submit</Button>
+                <button className={classes.submitButton} onClick={submitHandler}>Submit</button>
             </div>
         </div>
     )
