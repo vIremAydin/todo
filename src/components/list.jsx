@@ -79,6 +79,7 @@ export const List = () => {
                                                                                                 completed={itm.completed}/>
                     </div>)
                 }
+
             </div>
             <div className={classes.innerBox}>
                 <button className={classes.clearButton} onClick={clearCompleted}>Clear Completed</button>
